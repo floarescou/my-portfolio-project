@@ -1,3 +1,36 @@
+/*базовые переменные*/
 :root {
-    
+    --main-font: "Museo Sans", sans-serif;
+    --title-font: "Natasha", sans-serif;
+
+    --main-text-color: #22241b;
+    --accent-text-color: #204d15;
+    --light-text-color: #fff;
+    --block-title-text-color: rgba(34, 36, 27, 0.66);
+    --skills-points-text-color: rgba(34, 36, 27, 0.89);
+    --footer-text-color: rgba(34, 36, 27, 0.66);
 }
+
+/* // базовые переменные*/
+
+/*    === общие настройки ===    */
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--main-text-color);
+}
+
+.container {
+    max-width: 980px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+/* //    === общие настройки ===    */
+
