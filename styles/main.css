@@ -38,13 +38,32 @@ body {
     align-items: center;
 }
 
+/*настройки заголовков*/
+h2, h3 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 37px;
+    color: var(--main-text-color);
+    line-height: 1;
+}
+
+h3 {
+    font-size: 22px;
+    color: var(--main-text-color);
+    opacity: 0.659;
+}
+
+/* // настройки заголовков*/
+
 /* //    === общие настройки ===    */
 
 /*  === <!--секция первого экрана--> ===    */
 .header {
     padding: 56px 0 82px 0;
-    background-color: var(--main-text-color);
-    background: url("../img/main-bg.png") center center;
+    background: url("../img/main-bg.png") center center no-repeat var(--main-text-color);
     background-size: cover;
     color: var(--light-text-color);
     font-weight: 900;
@@ -66,6 +85,7 @@ body {
 .logo {
     font-size: 17px;
 }
+
 .logo span {
     font-weight: 100;
 }
@@ -91,6 +111,7 @@ body {
     margin-top: 4px;
     background-color: rgba(255, 255, 255, 0.35);
 }
+
 /* // <!--шапка сайта-->*/
 
 /*<!--контент первого экрана-->*/
@@ -98,20 +119,157 @@ body {
     max-width: 716px;
     margin: 0 auto 265px auto;
 }
+
 h1.header__title {
     font-size: 29px;
     font-weight: 100;
     line-height: 1.122;
     letter-spacing: 0.04em;
 }
+
 h1.header__title span {
-    font-family: "Natasha", sans-serif;
+    font-family: var(--title-font);
     font-size: 49px;
     letter-spacing: 0.045em;
 }
+
 /* // <!--контент первого экрана-->*/
-
-
-
 /* //  === <!--секция первого экрана--> ===    */
+
+/*  === <!--секция "обо мне"--> ===     */
+.about {
+    padding: 86px 0 48px 0;
+}
+
+h2.about__title {
+    margin-bottom: 77px;
+}
+
+.about__wrapper {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/*<!--блок "бэкграунд"-->*/
+.about__text-content {
+    max-width: 435px;
+}
+
+.block__title_text-content {
+    margin-bottom: 46px;
+}
+
+.about__description {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+p.about__text + p.about__text {
+    margin-top: 38px;
+}
+
+/* // <!--блок "бэкграунд"-->*/
+
+/*<!--блок достижений / преимуществ-->*/
+.about__advantages {
+    margin-bottom: 68px;
+}
+
+.block__title_advantages {
+    margin-bottom: 48px;
+}
+
+/*список достижений*/
+.advantages__list {
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 54px;
+}
+
+.advantages__item {
+    width: 112px;
+    text-align: center;
+    font-weight: 100;
+}
+
+.advantages__digit {
+    width: 103px;
+    height: 103px;
+    background: url("../img/icons/rhomb_bg.png") center center no-repeat;
+    background-size: contain;
+    margin: 0 auto 26px auto;
+    color: var(--accent-text-color);
+    font-size: 20px;
+    line-height: 103px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.advantages__desc {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* // список достижений*/
+/* // <!--блок достижений / преимуществ-->*/
+
+/* <!--блок контактов-->*/
+.block__title_contacts {
+    margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+    justify-content: space-between;
+}
+
+/*список ссылок на соцсети*/
+li.contacts__item + li.contacts__item {
+    margin-top: 15px;
+}
+
+a.contacts__link {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: var(--accent-text-color);
+}
+
+a.contacts__link::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 20%;
+    background-color: var(--accent-text-color);
+    opacity: 0.29;
+    margin-top: 2px;
+}
+/* // список ссылок на соцсети*/
+
+/*<!--ободряющая подпись-->*/
+.contacts__cta {
+    column-gap: 20px;
+}
+.contasts__image {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #eef1ed;
+}
+.contasts__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contacts__desc {
+    font-size: 14px;
+    color: var(--main-text-color);
+    opacity: 0.722;
+    font-style: italic;
+}
+/* // <!--ободряющая подпись-->*/
+/* //  <!--блок контактов-->*/
+/* //   === <!--секция "обо мне"--> ===     */
 

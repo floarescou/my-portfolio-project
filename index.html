@@ -73,14 +73,14 @@
 <section class="about">
     <div class="container">
         <!--заголовок секции-->
-        <h2 class="section-title">обо мне</h2>
+        <h2 class="about__title">обо мне</h2>
         <!-- // заголовок секции-->
 
         <!--основной контент секции-->
-        <div class="about__wrapper">
+        <div class="about__wrapper flex">
             <!--блок "бэкграунд"-->
             <div class="about__text-content">
-                <h3 class="block-title">бэкграунд</h3>
+                <h3 class="block__title_text-content">бэкграунд</h3>
                 <div class="about__description">
                     <p class="about__text">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -103,9 +103,10 @@
 
             <!--блок взаимодействия-->
             <div class="about__ux-content">
+                <!--блок достижений / преимуществ-->
                 <div class="about__advantages">
-                    <h3 class="block-title">Заслуги</h3>
-                    <ul class="advantages__list">
+                    <h3 class="block__title_advantages">Заслуги</h3>
+                    <ul class="advantages__list flex">
                         <li class="advantages__item">
                             <div class="advantages__digit">75</div>
                             <div class="advantages__desc">Реализованных проектов</div>
@@ -116,13 +117,17 @@
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__digit">8</div>
-                            <div class="advantages__desc">Лет опыта</div>
+                            <div class="advantages__desc">Лет <br> опыта</div>
                         </li>
                     </ul>
                 </div>
+                <!-- // блок достижений / преимуществ-->
+
+                <!--блок контактов-->
                 <div class="about__contacts">
-                    <h3 class="block-title">Связь</h3>
-                    <div class="contacts__wrapper">
+                    <h3 class="block__title_contacts">Связь</h3>
+                    <div class="contacts__wrapper flex">
+                        <!--ссылки для связи-->
                         <ul class="contacts__list">
                             <li class="contacts__item">
                                 <a href="#" class="contacts__link">freelance.ru/myname</a>
@@ -134,14 +139,18 @@
                                 <a href="#" class="contacts__link">info@sitename.ru</a>
                             </li>
                         </ul>
-                        <div class="contacts__cta">
+                        <!-- // ссылки для связи-->
+                        <!--ободряющая подпись-->
+                        <div class="contacts__cta flex">
                             <div class="contasts__image">
                                 <img src="img/icons/person.png" alt="иконка пользователя" class="contacts__img">
                             </div>
                             <div class="contacts__desc">Не стесняйтесь, пишите</div>
                         </div>
+                        <!-- // ободряющая подпись-->
                     </div>
                 </div>
+                <!-- // блок контактов-->
             </div>
             <!-- // блок взаимодействия-->
         </div>
