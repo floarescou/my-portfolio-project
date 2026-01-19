@@ -23,7 +23,7 @@
 <header class="header">
     <div class="container">
         <!--шапка сайта-->
-        <div class="header__navigation">
+        <div class="header__navigation flex">
             <!--логотип-->
             <div class="logo">
                 <span>my</span>portfolio
@@ -32,7 +32,7 @@
 
             <!--навигационное меню-->
             <nav class="menu">
-                <ul class="menu__list">
+                <ul class="menu__list flex">
                     <li class="menu__item">
                         <a href="#" class="menu__link">обо мне</a>
                     </li>
@@ -51,13 +51,20 @@
                 <a href="#" class="header__mail-link">info@myname.com</a>
             </div>
             <!-- // способ связи /почта-->
-            
         </div>
         <!-- // шапка сайта-->
 
         <!--контент первого экрана-->
-
+        <div class="header__main-content">
+            <h1 class="header__title"><span>Дело, которым я живу</span> верстка & frontend</h1>
+        </div>
         <!-- // контент первого экрана-->
+
+        <!--декоративная стрелка вниз-->
+        <div class="header__decor">
+            <img src="img/icons/arrow-down.png" alt="стрелка вниз" class="header__image">
+        </div>
+        <!-- // декоративная стрелка вниз-->
     </div>
 </header>
 <!-- // секция первого экрана-->

@@ -14,7 +14,7 @@
 /* // базовые переменные*/
 
 /*    === общие настройки ===    */
-*, *:before, *:after {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,5 +32,86 @@ body {
     padding: 0 20px;
     margin: 0 auto;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
 /* //    === общие настройки ===    */
+
+/*  === <!--секция первого экрана--> ===    */
+.header {
+    padding: 56px 0 82px 0;
+    background-color: var(--main-text-color);
+    background: url("../img/main-bg.png") center center;
+    background-size: cover;
+    color: var(--light-text-color);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header a {
+    color: var(--light-text-color);
+}
+
+/*<!--шапка сайта-->*/
+.header__navigation {
+    justify-content: space-between;
+    margin-bottom: 291px;
+}
+
+/*<!--логотип-->*/
+.logo {
+    font-size: 17px;
+}
+.logo span {
+    font-weight: 100;
+}
+
+/*<!--навигационное меню-->*/
+.menu__list {
+    column-gap: 48px;
+}
+
+/*<!--способ связи /почта-->*/
+.header__contact {
+    text-transform: lowercase;
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 4px;
+}
+
+.header__mail-link::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin-top: 4px;
+    background-color: rgba(255, 255, 255, 0.35);
+}
+/* // <!--шапка сайта-->*/
+
+/*<!--контент первого экрана-->*/
+.header__main-content {
+    max-width: 716px;
+    margin: 0 auto 265px auto;
+}
+h1.header__title {
+    font-size: 29px;
+    font-weight: 100;
+    line-height: 1.122;
+    letter-spacing: 0.04em;
+}
+h1.header__title span {
+    font-family: "Natasha", sans-serif;
+    font-size: 49px;
+    letter-spacing: 0.045em;
+}
+/* // <!--контент первого экрана-->*/
+
+
+
+/* //  === <!--секция первого экрана--> ===    */
 
