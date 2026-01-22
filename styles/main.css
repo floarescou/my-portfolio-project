@@ -9,6 +9,8 @@
     --block-title-text-color: rgba(34, 36, 27, 0.66);
     --skills-points-text-color: rgba(34, 36, 27, 0.89);
     --footer-text-color: rgba(34, 36, 27, 0.66);
+
+    --hover-effect: all .5s ease;
 }
 
 /* // базовые переменные*/
@@ -101,15 +103,21 @@ h3 {
     font-size: 13px;
     font-weight: 300;
     margin-top: 4px;
+
 }
 
-.header__mail-link::after, .portfolio__link::after {
+.header__mail-link::after {
     content: "";
     display: block;
     height: 1px;
     width: 100%;
     margin-top: 4px;
     background-color: rgba(255, 255, 255, 0.35);
+    transition: var(--hover-effect);
+}
+
+.header__contact:hover .header__mail-link::after {
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 /* // <!--шапка сайта-->*/
@@ -245,6 +253,11 @@ a.contacts__link::after {
     background-color: var(--accent-text-color);
     opacity: 0.29;
     margin-top: 2px;
+    transition: var(--hover-effect);
+}
+
+.contacts__item:hover a.contacts__link::after {
+    width: 40%;
 }
 
 /* // список ссылок на соцсети*/
@@ -333,17 +346,20 @@ li.skills__item {
 }
 
 .portfolio__item {
+    display: block;
     position: relative;
     width: 300px;
     height: 300px;
+    overflow: hidden;
+    object-fit: cover;
 }
-/*.portfolio__image {*/
-/*    width: 300px;*/
-/*}*/
+.portfolio__image {
+    transition: var(--hover-effect);
+}
 
-/*.portfolio__item:hover .portfolio__image{*/
-/*    width: 150px;*/
-/*}*/
+.portfolio__item:hover .portfolio__image{
+    transform: scale(1.1);
+}
 
 .portfolio__overlay {
     display: none;
@@ -354,6 +370,10 @@ li.skills__item {
     right: 0;
     bottom: 0;
     text-align: center;
+    z-index: 10;
+}
+.portfolio__item:hover .portfolio__overlay{
+    display: block;
 }
 
 .portfolio__name {
