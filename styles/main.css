@@ -103,7 +103,7 @@ h3 {
     margin-top: 4px;
 }
 
-.header__mail-link::after {
+.header__mail-link::after, .portfolio__link::after {
     content: "";
     display: block;
     height: 1px;
@@ -244,12 +244,14 @@ a.contacts__link::after {
     opacity: 0.29;
     margin-top: 2px;
 }
+
 /* // список ссылок на соцсети*/
 
 /*<!--ободряющая подпись-->*/
 .contacts__cta {
     column-gap: 20px;
 }
+
 .contasts__image {
     position: relative;
     width: 64px;
@@ -257,19 +259,136 @@ a.contacts__link::after {
     border-radius: 50%;
     background-color: #eef1ed;
 }
+
 .contasts__image img {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .contacts__desc {
     font-size: 14px;
     color: var(--main-text-color);
     opacity: 0.722;
     font-style: italic;
 }
+
 /* // <!--ободряющая подпись-->*/
 /* //  <!--блок контактов-->*/
 /* //   === <!--секция "обо мне"--> ===     */
+
+/*   === <!--секция "навыки"--> ===     */
+.skills {
+    padding: 48px 0 42px 0;
+}
+
+h2.skills__title {
+    margin-bottom: 63px;
+}
+
+ul.skills__list {
+    justify-content: space-between;
+}
+
+li.skills__item {
+    column-gap: 27px;
+}
+
+.skills__digit {
+    position: relative;
+    font-size: 13px;
+    color: var(--accent-text-color);
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 61px;
+    height: 61px;
+    line-height: 61px;
+    background: url("../img/icons/circle_bg.png");
+}
+
+.skills__name {
+    font-weight: 900;
+    color: var(--skills-points-text-color);
+    text-transform: uppercase;
+}
+
+/* //   === <!--секция "навыки"--> ===     */
+
+/*   === <!--секция "работы"--> ===     */
+.portfolio {
+    padding: 43px 0 62px 0;
+}
+.portfolio__title {
+    margin-bottom: 60px;
+}
+
+.portfolio__list {
+    justify-content: space-between;
+}
+
+.portfolio__item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+/*.portfolio__image {*/
+/*    width: 300px;*/
+/*}*/
+
+/*.portfolio__item:hover .portfolio__image{*/
+/*    width: 150px;*/
+/*}*/
+
+.portfolio__overlay {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.56);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+.portfolio__name {
+    font-weight: 900;
+    color: var(--light-text-color);
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.portfolio__link {
+    font-size: 13px;
+    color: var(--light-text-color);
+    text-align: center;
+}
+
+.portfolio__link::after {
+    margin: 2px auto 0 auto;
+    content: "";
+    display: block;
+    height: 0.5px;
+    width: 40%;
+    background-color: var(--light-text-color);
+}
+.portfolio__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* //   === <!--секция "работы"--> ===     */
+
+/*  ===<!--подвал сайта / футер-->===   */
+.footer {
+    padding: 61px 0 80px 0;
+    font-size: 11px;
+    color: var(--footer-text-color);
+    text-transform: uppercase;
+}
+
+/* //  ===<!--подвал сайта / футер-->===   */
 
