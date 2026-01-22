@@ -1,3 +1,96 @@
 @media screen and (max-width: 1024px) {
 
 }
+
+@media screen and (max-width: 970px) {
+    .about, .skills, .portfolio, footer {
+        padding: 50px 0 40px 0;
+    }
+
+    h2.about__title, h2.skills__title {
+        margin-bottom: 60px;
+    }
+
+    .about__wrapper {
+        row-gap: 60px;
+    }
+
+    .about__text-content {
+        max-width: 100%;
+    }
+
+    .portfolio__list {
+        flex-wrap: wrap;
+        row-gap: 50px;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    ul.skills__list {
+        justify-content: space-between;
+        column-gap: 20px;
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    li.skills__item {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .menu__list {
+        column-gap: 35px;
+    }
+
+    .advantages__list {
+        column-gap: 10%;
+    }
+
+    ul.skills__list {
+        row-gap: 25px;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .header__navigation {
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 150px;
+    }
+
+    .header__contact {
+        display: none;
+    }
+
+    .header__main-content {
+        max-width: 90%;
+        margin: 0 auto 150px auto;
+    }
+
+    h1.header__title {
+        font-size: 20px;
+    }
+
+    h1.header__title span {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contacts__cta {
+        display: none;
+    }
+
+    li.skills__item {
+        width: 200px;
+    }
+
+    .advantages__list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 35px;
+        column-gap: 54px;
+    }
+}

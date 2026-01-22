@@ -148,6 +148,7 @@ h2.about__title {
 .about__wrapper {
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 /*<!--блок "бэкграунд"-->*/
@@ -222,6 +223,7 @@ p.about__text + p.about__text {
 
 .contacts__wrapper {
     justify-content: space-between;
+    column-gap: 30px;
 }
 
 /*список ссылок на соцсети*/
@@ -289,6 +291,7 @@ h2.skills__title {
 
 ul.skills__list {
     justify-content: space-between;
+    column-gap: 20px;
 }
 
 li.skills__item {
@@ -326,6 +329,7 @@ li.skills__item {
 
 .portfolio__list {
     justify-content: space-between;
+    column-gap: 15px;
 }
 
 .portfolio__item {
