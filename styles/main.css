@@ -295,3 +295,40 @@ a.join-us__link + a.join-us__link {
 }
 
 /* .. <!--секция 'обо мне'-->*/
+
+/*<!--секция 'навыки'-->*/
+.skills {
+    padding: 48px 0 42px 0;
+}
+
+.skills__item {
+    column-gap: 26px;
+    text-transform: uppercase;
+}
+
+.skills__digit {
+    font-size: 13px;
+    font-weight: 100;
+    color: var(--ui-text-color);
+    text-align: center;
+    width: 61px;
+    height: 61px;
+    line-height: 61px;
+    background-image: url("../img/icons/skills-item-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+.skills__digit span {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.skills__skill {
+    opacity: 0.89;
+    font-weight: 900;
+}
+/* .. <!--секция 'навыки'-->*/
