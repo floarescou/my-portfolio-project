@@ -1,0 +1,53 @@
+/*переменные*/
+:root {
+    --main-font: "Museo Sans", sans-serif;
+    --title-font: "Natasha", sans-serif;
+
+    --main-text-color: #22241b;
+    --light-text-color: #ffffff;
+    --title-text-color: #22241b;
+    --ui-text-color: #204d15;
+}
+
+/* .. переменные*/
+
+/*общие настройки*/
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--main-text-color)
+}
+/*заголовки*/
+h1, h2, h3 {
+    font-family: var(--title-font);
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    line-height: 1;
+}
+h1 {
+    font-size: 49px;
+    color: var(--light-text-color);
+    line-height: 1.122;
+}
+h1 span {
+    font-family: var(--main-font);
+    font-size: 29px;
+    font-weight: 100;
+}
+h2 {
+    font-size: 37px;
+}
+h3 {
+    opacity: 0.66;
+    font-size: 22px;
+}
+/*.. заголовки*/
+
+/* .. общие настройки*/
