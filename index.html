@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My Portfolio</title>
 
     <!--сброс предустановленных стилей-->
     <link rel="stylesheet" href="styles/reset.css">
@@ -22,7 +22,7 @@
 <header class="hero">
     <div class="container">
         <!--шапка сайта-->
-        <div class="topline">
+        <div class="topline flex">
             <div class="logo">
                 <p class="logo__name">
                     <span>my</span>portfolio
@@ -30,7 +30,7 @@
             </div>
 
             <nav class="nav">
-                <ul class="nav__list">
+                <ul class="nav__list flex">
                     <li class="nav__item">Обо мне</li>
                     <li class="nav__item">Навыки</li>
                     <li class="nav__item">Работы</li>
@@ -69,7 +69,7 @@
         <!-- .. заголовок секции-->
 
         <!--основной контент секции-->
-        <div class="about-wrapper">
+        <div class="about-wrapper flex">
             <!--описание-->
             <div class="about__description">
                 <h3 class="about__block-title">Бэкграунд</h3>
@@ -98,7 +98,7 @@
                 <!--преимущества-->
                 <div class="about__info-advantages">
                     <h3 class="about__block-title">Заслуги</h3>
-                    <ul class="advantages__list">
+                    <ul class="advantages__list flex">
                         <li class="advantages__item">
                             <div class="advantages__digit">75</div>
                             <p class="advantages__desc">Реализованных проектов</p>
@@ -109,7 +109,7 @@
                         </li>
                         <li class="advantages__item">
                             <div class="advantages__digit">8</div>
-                            <p class="advantages__desc">Лет опыта</p>
+                            <p class="advantages__desc advantages__desc_small">Лет опыта</p>
                         </li>
                     </ul>
                 </div>
@@ -117,10 +117,16 @@
                 <!-- связь-->
                 <div class="about__info-join-us">
                     <h3 class="about__block-title">Связь</h3>
-                    <div class="join-us-wrapper">
-                        <div class="join-us__links"></div>
-                        <div class="join-us__desc">
-                            <img src="img/icons/person.png" alt="иконка" class="join-us__icon">
+                    <div class="join-us-wrapper flex">
+                        <div class="join-us__links">
+                            <a href="#" class="join-us__link">freelance.ru/myname</a>
+                            <a href="#" class="join-us__link">vk.com/12343</a>
+                            <a href="#" class="join-us__link">info@sitename.ru</a>
+                        </div>
+                        <div class="join-us__desc flex">
+                            <div class="join-us__icon">
+                                <img src="img/icons/person.png" alt="иконка" class="join-us__icon-img">
+                            </div>
                             <p class="join-us__text">Не стесняйтесь, пишите</p>
                         </div>
                     </div>
