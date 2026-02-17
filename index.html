@@ -18,6 +18,196 @@
 
 </head>
 <body>
+<!--первый экран-->
+<header class="hero">
+    <div class="container">
+        <!--шапка сайта-->
+        <div class="topline">
+            <div class="logo">
+                <p class="logo__name">
+                    <span>my</span>portfolio
+                </p>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">Обо мне</li>
+                    <li class="nav__item">Навыки</li>
+                    <li class="nav__item">Работы</li>
+                </ul>
+            </nav>
+
+            <div class="topline__email">
+                <a href="mailto:floarescou@yandex.ru" class="topline__email-link">info@myname.com</a>
+            </div>
+        </div>
+        <!-- .. шапка сайта-->
+
+        <!--основной контент-->
+        <div class="hero__offer">
+            <h1 class="hero__offer-title">
+                Дело, которым я живу
+                <span>Верстка & frontend</span>
+            </h1>
+        </div>
+        <!-- .. основной контент-->
+
+        <!--стрелка вниз-->
+        <div class="arrow-down">
+            <img src="img/icons/arrow-down.png" alt="смотреть больше" class="arrow-down__img">
+        </div>
+        <!-- .. стрелка вниз-->
+    </div>
+</header>
+<!-- .. первый экран-->
+
+<!--секция 'обо мне'-->
+<section class="about">
+    <div class="container">
+        <!--заголовок секции-->
+        <h2 class="about__title">Обо мне</h2>
+        <!-- .. заголовок секции-->
+
+        <!--основной контент секции-->
+        <div class="about-wrapper">
+            <!--описание-->
+            <div class="about__description">
+                <h3 class="about__block-title">Бэкграунд</h3>
+                <div class="description__text">
+                    <p class="description__paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+                    </p>
+                    <p class="description__paragraph">
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui.
+                    </p>
+                    <p class="description__paragraph">
+                        Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa quiis aute irure dolor in reprehenderit in is aute irure
+                        dolor in reprehenderit in is aute irure dolor in reprehenderit in.
+                    </p>
+                </div>
+            </div>
+            <!-- .. описание-->
+
+            <!--инфографика-->
+            <div class="about__info">
+                <!--преимущества-->
+                <div class="about__info-advantages">
+                    <h3 class="about__block-title">Заслуги</h3>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <div class="advantages__digit">75</div>
+                            <p class="advantages__desc">Реализованных проектов</p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__digit">154</div>
+                            <p class="advantages__desc">Положительных отзыва</p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="advantages__digit">8</div>
+                            <p class="advantages__desc">Лет опыта</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .. преимущества-->
+                <!-- связь-->
+                <div class="about__info-join-us">
+                    <h3 class="about__block-title">Связь</h3>
+                    <div class="join-us-wrapper">
+                        <div class="join-us__links"></div>
+                        <div class="join-us__desc">
+                            <img src="img/icons/person.png" alt="иконка" class="join-us__icon">
+                            <p class="join-us__text">Не стесняйтесь, пишите</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- .. связь-->
+            </div>
+            <!-- .. инфографика-->
+
+        </div>
+        <!-- .. основной контент секции-->
+
+    </div>
+</section>
+<!-- .. секция 'обо мне'-->
+
+<!--секция 'навыки'-->
+<section class="skills">
+    <div class="container">
+        <!--заголовок секции-->
+        <h2 class="skills__title">Навыки</h2>
+        <!-- .. заголовок секции-->
+        <!--основной контент-->
+        <ul class="skills__list">
+            <li class="skills__item">
+                <div class="skills__digit">98%</div>
+                <p class="skills__skill">Photoshop</p>
+            </li>
+            <li class="skills__item">
+                <div class="skills__digit">99%</div>
+                <p class="skills__skill">html5</p>
+            </li>
+            <li class="skills__item">
+                <div class="skills__digit">100%</div>
+                <p class="skills__skill">CSS3</p>
+            </li>
+            <li class="skills__item">
+                <div class="skills__digit">0%</div>
+                <p class="skills__skill">Лень</p>
+            </li>
+        </ul>
+        <!-- .. основной контент-->
+    </div>
+</section>
+<!-- .. секция 'навыки'-->
+
+<!--секция 'мои работы'-->
+<section class="portfolio">
+    <div class="container">
+        <!--заголовок секции-->
+        <h2 class="portfolio__title">Работы</h2>
+        <!-- .. заголовок секции-->
+        <!--основной контент-->
+        <ul class="portfolio__list">
+            <li class="portfolio__item">
+                <div class="portfolio__name">
+                    <p class="portfolio__title">Название работы</p>
+                    <a href="#" class="portfolio__link">Смотреть</a>
+                </div>
+                <img src="img/portfolio/item-1.png" alt="превью работы" class="portfolio__preview">
+            </li>
+            <li class="portfolio__item">
+                <div class="portfolio__name">
+                    <p class="portfolio__title">Название работы</p>
+                    <a href="#" class="portfolio__link">Смотреть</a>
+                </div>
+                <img src="img/portfolio/item-2.png" alt="превью работы" class="portfolio__preview">
+            </li>
+            <li class="portfolio__item">
+                <div class="portfolio__name">
+                    <p class="portfolio__title">Название работы</p>
+                    <a href="#" class="portfolio__link">Смотреть</a>
+                </div>
+                <img src="img/portfolio/item-3.png" alt="превью работы" class="portfolio__preview">
+            </li>
+        </ul>
+        <!-- .. основной контент-->
+    </div>
+</section>
+<!-- .. секция 'мои работы'-->
+
+<!--подвал сайта-->
+<footer class="footer">
+    <div class="container">
+        <p class="footer__credits">2017-2099 / Смотрю в будущее</p>
+    </div>
+</footer>
+<!-- .. подвал сайта-->
 
 <!--основной файл скриптов-->
 <script src="scripts/script.js"></script>

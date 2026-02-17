@@ -50,4 +50,10 @@ h3 {
 }
 /*.. заголовки*/
 
+.container {
+    max-width: 980px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 /* .. общие настройки*/
