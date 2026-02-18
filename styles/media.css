@@ -1,3 +1,146 @@
 @media screen and (max-width: 1024px) {
 
 }
+
+/*desktop small*/
+@media screen and (max-width: 950px) {
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        margin-bottom: 35px;
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .about__description {
+        max-width: 100%;
+    }
+
+    p.description__paragraph + p.description__paragraph {
+        margin-top: 30px;
+    }
+
+    .about__info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        column-gap: 80px;
+    }
+
+    .join-us__desc {
+        display: none;
+    }
+
+    .portfolio__list {
+        flex-wrap: wrap;
+        column-gap: 20px;
+        justify-content: center;
+        row-gap: 30px;
+    }
+
+    .footer {
+        padding: 30px 0 50px 0;
+    }
+}
+
+/* ..desktop small*/
+
+/*tablet*/
+@media screen and (max-width: 705px) {
+    .skills__list {
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 30px;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 696px) {
+    .about__info {
+        flex-direction: column;
+    }
+    .join-us__links {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 45px;
+    }
+    a.join-us__link + a.join-us__link {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .topline {
+        justify-content: space-around;
+    }
+    nav.nav {
+        display: none;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h1 span {
+        font-size: 22px;
+    }
+}
+
+/* .. tablet*/
+
+/*mobile*/
+@media screen and (max-width: 570px) {
+    .skills__item {
+        width: 185px;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    ul.advantages__list {
+        column-gap: 35px;
+    }
+    .join-us__links {
+        column-gap: 35px;
+    }
+}
+
+@media screen and (max-width: 445px) {
+    .about {
+        padding-bottom: 0;
+    }
+
+    .about__info {
+        flex-direction: row;
+    }
+    ul.advantages__list {
+        flex-direction: column;
+        row-gap: 35px;
+        justify-content: flex-start;
+    }
+    .join-us__links {
+        flex-direction: column;
+        row-gap: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero__offer {
+        margin-top: 190px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .about {
+        padding-bottom: 40px;
+    }
+    .about__info-advantages {
+        display: none;
+    }
+}
+
+/* .. mobile*/
